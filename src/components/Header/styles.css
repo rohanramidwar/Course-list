@@ -1,0 +1,11 @@
+.header {
+  padding: 8px 50px;
+  height: 80px;
+}
+.navbar-brand {
+  font-size: 25px;
+  font-weight: 700;
+}
+.header > ul > li > a {
+  font-size: 15px;
+}
