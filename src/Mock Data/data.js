@@ -33,7 +33,7 @@ const data = [
     author: "Love Babbar",
     title: "Introduction to Flutter Development Using Dart",
     subtitle: "10 Hours to Get Started with Flutter",
-  },
+  }
   // {
   //     id: 4,
   //     img: img4,
@@ -66,19 +66,19 @@ const data = [
   // }
 ];
 
-const filtered = [
-  {
-    id: 1,
-    pref1: "All",
-    pref2: "Web Development (1)",
-    pref3: "Flutter (2)",
-  },
-  {
-    id: 2,
-    pref1: "All",
-    pref2: "Angela Yu",
-    pref3: "Love Babbar",
-  },
-];
+// const filtered = [
+//   {
+//     id: 1,
+//     pref1: "All",
+//     pref2: "Web Development (1)",
+//     pref3: "Flutter (2)",
+//   },
+//   {
+//     id: 2,
+//     pref1: "All",
+//     pref2: "Angela Yu",
+//     pref3: "Love Babbar",
+//   },
+// ];
 
-export { data, filtered };
+export default data;

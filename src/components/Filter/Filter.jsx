@@ -1,33 +1,15 @@
 import React from "react";
+import "./styles.css"
 
-function Filter(props) {
-  function handleClick(event) {
-    const cat = event.target.innerHTML;
-    props.onFilter(cat);
-  }
-
+function Filter() {
   return (
-    <div className="dropdown">
-      <button
-        className="btn btn-secondary dropdown-toggle"
-        type="button"
-        id="dropdownMenuButton1"
-        data-bs-toggle="dropdown"
-        aria-expanded="false"
-      >
-        Filter
-      </button>
-      <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-        <li className="dropdown-item" onClick={handleClick}>
-          {props.pref1}
-        </li>
-        <li className="dropdown-item" onClick={handleClick}>
-          {props.pref2}
-        </li>
-        <li className="dropdown-item" onClick={handleClick}>
-          {props.pref3}
-        </li>
-      </ul>
+    <div class="form-floating course-filter">
+    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+    <option selected>All</option>
+    <option value="1">Web Development(1)</option>
+    <option value="2">Flutter(2)</option>
+    </select>
+    <label for="floatingSelect">Category</label>
     </div>
   );
 }
