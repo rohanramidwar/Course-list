@@ -1,15 +1,15 @@
 import React from "react";
-import "./styles.css"
+import "./styles.css";
 
-function Filter() {
+function Filter(props) {
   return (
     <div class="form-floating course-filter">
     <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-    <option selected>All</option>
-    <option value="1">Web Development(1)</option>
-    <option value="2">Flutter(2)</option>
+    <option selected>{props.opt1}</option>
+    <option value="1">{props.opt2}</option>
+    <option value="2">{props.opt3}</option>
     </select>
-    <label for="floatingSelect">Category</label>
+    <label for="floatingSelect">{props.label}</label>
     </div>
   );
 }

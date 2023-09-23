@@ -1,84 +1,190 @@
-import img1 from "./images/Teachable Thumbnails (1).png";
-import img2 from "./images/Teachable Thumbnails (1) (1).png";
-import img3 from "./images/6.png";
-// import img4 from "./images/Udemy Flutter (3).png";
-// import img5 from "./images/3.png";
-// import img6 from "./images/TeachableDesign.png";
-// import img7 from "./images/TeachableMarketing.png"
-// import img8 from "./images/Teachable Thumbnails (3).png";
-// end of image imports
+import img1 from "./images/images.jpeg"
+import img2 from "./images/images (1).jpeg"
+import img3 from "./images/images (2).jpeg"
+import img4 from "./images/images (3).jpeg"
+import img5 from "./images/images (4).jpeg"
+import img6 from "./images/images (6).jpeg"
+import img7 from "./images/images (5).jpeg"
+import img8 from "./images/images (7).jpeg"
+import img9 from "./images/images (8).jpeg"
+import img10 from "./images/images (9).jpeg"
+import img11 from "./images/images (10).jpeg"
+import img12 from "./images/images (11).jpeg"
+import img13 from "./images/images (12).jpeg"
+import img14 from "./images/images (13).jpeg"
+import img15 from "./images/images (14).jpeg"
+
+//end of image imports
 
 const data = [
   {
     id: 1,
-    img: img1,
-    Category: "Flutter (2)",
-    author: "Angela Yu",
-    title: "iOS 13 App Development Coding Lessons",
-    subtitle: "Learn to develop iOS 13 apps using Swift 5.1 and Xcode 11",
+    img: img8,
+    title: "Data Structure and Algorithms: Deep Dive Using Java",
+    author: "Tim Buchalka",
+    rating: "4.4",
+    stars: "⭐⭐⭐⭐",
+    views: "(14,721)",
+    price: "419"
   },
   {
     id: 2,
-    img: img2,
-    Category: "Web Development (1)",
-    author: "Angela Yu",
-    title: "The Complete Web Development Course",
-    subtitle:
-      "The complete full-stack web development bootcamp with HTML 5, CSS 3, Javascript ES6, Bootstrap 4, JQuery, Node.js, MongoDB and more!",
+    img: img12,
+    title: "Modern React with Redux[2023 Update]",
+    author: "Stephen Grider",
+    rating: "4.7",
+    stars: "⭐⭐⭐⭐",
+    views: "(84,222)",
+    price: "499"
   },
   {
     id: 3,
+    img: img5,
+    title: "Mastering Data Structures & Algorithms using C and C++",
+    author: "Abdul Bari",
+    rating: "4.6",
+    stars: "⭐⭐⭐⭐",
+    views: "(41,835)",
+    price: "419"
+  },
+  {
+    id: 4,
+    img: img1,
+    title: "The Complete 2023 Web Development Bootcamp",
+    author: "Dr. Angela Yu",
+    rating: "4.7",
+    stars: "⭐⭐⭐⭐",
+    views: "(323,695)",
+    price: "419"
+  },
+  {
+    id: 5,
+    img: img10,
+    title: "Complete Python Developer in 2023: Zero to Mastery",
+    author: "Andrei Neagoie",
+    rating: "4.6",
+    stars: "⭐⭐⭐⭐",
+    views: "(55,142)",
+    price: "419"
+  },
+  {
+    id: 6,
+    img: img15,
+    title: "Adobe Photoshop CC-Essentials Traning Course",
+    author: "Daniel Walter Scott",
+    rating: "4.7",
+    stars: "⭐⭐⭐⭐",
+    views: "(31,302)",
+    price: "499"
+  },
+  {
+    id: 7,
+    img: img6,
+    title: "Master the Coding Interview: Data Structures + Algorithms",
+    author: "Andrei Neagoie",
+    rating: "4.6",
+    stars: "⭐⭐⭐⭐",
+    views: "(32,985)",
+    price: "799"
+  },
+  {
+    id: 8,
+    img: img2,
+    title: "The Web Developer Bootcamp 2023",
+    author: "Colt Steele",
+    rating: "4.7",
+    stars: "⭐⭐⭐⭐",
+    views: "(263,295)",
+    price: "419"
+  },
+  {
+    id: 9,
+    img: img9,
+    title: "100 Days of Code: The Complete Python Pro Bootcamp for 2023",
+    author: "Dr. Angela Yu",
+    rating: "4.7",
+    stars: "⭐⭐⭐⭐",
+    views: "(235,112)",
+    price: "449"
+  },
+  {
+    id: 10,
+    img: img4,
+    title: "The Complete Flutter Development Bootcamp with Dart",
+    author: "Dr. Angela Yu",
+    rating: "4.5",
+    stars: "⭐⭐⭐⭐",
+    views: "(50,775)",
+    price: "419"
+  },
+  {
+    id: 11,
+    img: img14,
+    title: "User Experience Design Essentials-Adobe XD UI UX Design",
+    author: "Daniel Walter Scott",
+    rating: "4.7",
+    stars: "⭐⭐⭐⭐",
+    views: "(44,882)",
+    price: "419"
+  },
+  {
+    id: 12,
+    img: img13,
+    title: "Complete Figma Megacourse: UI/UX Design Beginner to Expert",
+    author: "Creativity Unleashed",
+    rating: "4.3",
+    stars: "⭐⭐⭐⭐",
+    views: "(2,422)",
+    price: "499"
+  },
+  {
+    id: 13,
     img: img3,
-    Category: "Flutter (2)",
-    author: "Love Babbar",
-    title: "Introduction to Flutter Development Using Dart",
-    subtitle: "10 Hours to Get Started with Flutter",
+    title: "Git a Web Developer Job: Mastering the Modern Workflow",
+    author: "Brad Schiff",
+    rating: "4.8",
+    stars: "⭐⭐⭐⭐⭐",
+    views: "(7,195)",
+    price: "499"
+  },
+  {
+    id: 14,
+    img: img11,
+    title: "React-The Complete Guide 2023(incl.React Router & Redux",
+    author: "Maximilian Schwarzmuller",
+    rating: "4.6",
+    stars: "⭐⭐⭐⭐",
+    views: "(195,442)",
+    price: "799"
+  },
+  {
+    id: 15,
+    img: img7,
+    title: "The Coding Interview Bootcamp: Algorithms + Data Structures",
+    author: "Stephen Grider",
+    rating: "4.8",
+    stars: "⭐⭐⭐⭐",
+    views: "(12,905)",
+    price: "399"
   }
-  // {
-  //     id: 4,
-  //     img: img4,
-  //     title: "The Complete 2021 Flutter Development Bootcamp with Dart",
-  //     subtitle: "Built in collaboration with the Google Flutter team"
-  // },
-  // {
-  //     id: 5,
-  //     img: img5,
-  //     title: "The Complete Data Science & Machine Learning Bootcamp",
-  //     subtitle: ""
-  // },
-  // {
-  //     id: 6,
-  //     img: img6,
-  //     title: "Learn App Design",
-  //     subtitle: "Understand Digital Design Fundamentals to Make Beautiful Apps"
-  // },
-  // {
-  //     id: 7,
-  //     img: img7,
-  //     title: "Learn App Marketing",
-  //     subtitle: "Growth Hack Your Way to More Downloads on the App Stores."
-  // },
-  // {
-  //     id: 8,
-  //     img: img8,
-  //     title: "12 Rules to Learn to Code",
-  //     subtitle: "Top Tips and Tricks for Levelling Up as a Developer"
-  // }
-];
+]
 
-// const filtered = [
-//   {
-//     id: 1,
-//     pref1: "All",
-//     pref2: "Web Development (1)",
-//     pref3: "Flutter (2)",
-//   },
-//   {
-//     id: 2,
-//     pref1: "All",
-//     pref2: "Angela Yu",
-//     pref3: "Love Babbar",
-//   },
-// ];
+const filterBy = [
+  {
+    id: 1,
+    opt1: "All",
+    opt2: "Web Development(1)",
+    opt3: "Flutter(2)",
+    label: "Category"
+  },
+  {
+    id: 2,
+    opt1: "All",
+    opt2: "Angela Yu",
+    opt3: "Daniel Walter Scott",
+    label: "Author"
+  }
+]
 
-export default data;
+
+export { data, filterBy };

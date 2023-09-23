@@ -3,5 +3,11 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 50px;
-    padding: 8px 50px;
+}
+@media (max-width: 1000px) {
+    .search-bar {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: normal;
+    }
 }

@@ -1,0 +1,17 @@
+.course-title, .course-price {
+    font-size: 18px;
+    font-weight: 700;
+}
+.course-author {
+    font-size: 15px;
+}
+.course-rating {
+    font-size: 14px;
+    font-weight: 700;
+}
+.course-stars {
+    font-size: 14px;
+}
+.course-views {
+    font-size: 13px;
+}
