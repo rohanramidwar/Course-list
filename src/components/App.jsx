@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./Header/Header";
 import Searchbar from "./Seachbar/Searchbar";
 import Card from "./Card/Card";
@@ -10,15 +10,31 @@ import "@fontsource/metropolis/200.css";
 import "@fontsource/metropolis/700.css";
 
 function App() {
+  const [courses, setCourses] = useState(data);
+
+  function filterData(filterByThisOption) {
+    setCourses(
+      filterByThisOption === "All"
+        ? data
+        : () => {
+            return data.filter((courseItem) => {
+              return (
+                courseItem.category === filterByThisOption ||
+                courseItem.author === filterByThisOption
+              );
+            });
+          }
+    );
+  }
 
   return (
     <div>
       <Header />
-      <Searchbar />
+      <Searchbar passFilterFn={filterData} />
       <div className="row row-cols-1 row-cols-lg-4 row-cols-md-2 g-4 px-5">
-        {data.map(cardTerm => {
+        {courses.map((cardTerm) => {
           return (
-            <Card 
+            <Card
               key={cardTerm.id}
               img={cardTerm.img}
               title={cardTerm.title}
@@ -28,7 +44,7 @@ function App() {
               views={cardTerm.views}
               price={cardTerm.price}
             />
-          )
+          );
         })}
       </div>
       <Footer />
